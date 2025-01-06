@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.card-stacker:hover .card {
+  margin-left: 10px;
+}
+
+.nav a:hover {
+  background-color: #16423c;
+  color: white;
+}
+
+.active {
+  background-color: #16423c;
+  color: white;
+}
+
+.nav:hover a:not(:hover) {
+  background-color: transparent;
+  color: rgb(53, 53, 53);
+}
