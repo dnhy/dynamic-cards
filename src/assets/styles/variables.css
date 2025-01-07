@@ -1,0 +1,4 @@
+:root {
+  --green: #39c5bb;
+  --primary: var(--green);
+}
