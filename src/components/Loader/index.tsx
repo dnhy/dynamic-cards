@@ -10,7 +10,6 @@ interface Loaderprops {
 
 const Loader: FC<Loaderprops> = memo((props) => {
   const ref = useRef<HTMLDivElement>(null);
-  console.log("props.isLoading", props.isLoading);
 
   return (
     <>
