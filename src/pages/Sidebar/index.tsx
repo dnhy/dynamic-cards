@@ -7,9 +7,7 @@ import { SidebarContext } from "@/context/sidebarContext.tsx";
 
 const Sidebar = () => {
   const [activeLinkIdx, setActiveLinkIdx] = useState(1);
-  const [sidebarClass, setSidebarClass] = useState("");
   const { isSideBarOpen } = useContext<any>(SidebarContext);
-  console.log("isSideBarOpen :", isSideBarOpen);
   return (
     <div className={`sidebar ${isSideBarOpen ? "sidebar-change" : null}`}>
       <div className="userinfo">
@@ -21,7 +19,13 @@ const Sidebar = () => {
       <nav className="navigation">
         <ul className="nav-list">
           {navigationLinks.map((eachData: NavigationLink) => (
-            <li className="nav-item" key={eachData.id}>
+            <li
+              className="nav-item"
+              key={eachData.id}
+              onClick={() => {
+                setActiveLinkIdx(eachData.id);
+              }}
+            >
               <a
                 className={`nav-link ${
                   activeLinkIdx === eachData.id ? "active" : null
