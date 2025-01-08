@@ -27,7 +27,7 @@ const Loader: FC<Loaderprops> = memo((props) => {
             <CustomLogo
               className="animation"
               height="150px"
-              onAnimationEnd={(e: React.AnimationEvent<HTMLDivElement>) => {
+              onAnimationEnd={(e: React.AnimationEvent<SVGSVGElement>) => {
                 ref.current?.remove();
                 (e.target as HTMLDivElement)?.remove();
               }}

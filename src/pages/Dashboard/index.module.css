@@ -1,0 +1,4 @@
+.container {
+  display: flex;
+  height: 100vh; /* 使用 min-height 确保容器至少覆盖视口高度 */
+}

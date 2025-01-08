@@ -1,0 +1,28 @@
+.main-content-top {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.content-top-left {
+  display: flex;
+  column-gap: 20px;
+}
+
+.sidebar-toggle img {
+  width: 20px;
+}
+.title {
+  color: var(--clr-white);
+  font-size: 20px;
+  font-weight: 600;
+}
+.content-top-btn {
+  display: flex;
+  column-gap: 20px;
+}
+.content-top-btn img {
+  width: 24px;
+}
+.content-top-btn img:hover {
+  filter: brightness(0) invert(100%);
+}

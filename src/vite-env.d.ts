@@ -1,2 +1,3 @@
 /// <reference types="vite/client" />
-declare module "@/*";
+// declare module "@/*";
+declare module "prop-types";

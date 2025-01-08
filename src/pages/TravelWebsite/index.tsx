@@ -4,8 +4,8 @@ import bac4 from "@/assets/travel/bac 4.png";
 import bac2_2 from "@/assets/travel/bac 2.2.png";
 // import LoadingSpinner from "@/components/LoadingSpinner";
 import Loader from "@/components/Loader";
-import "./index.css";
 import { useState, useEffect, useRef } from "react";
+import styles from "./index.module.css";
 
 export default function TravelWebsite() {
   const [isLoading, setIsLoading] = useState(true);
@@ -71,7 +71,7 @@ export default function TravelWebsite() {
           backgroundPosition: "100% 80%",
           display: isLoading ? "none" : "block",
         }}
-        className="w-screen h-screen overflow-hidden relative  select-none content"
+        className={`w-screen h-screen overflow-hidden relative  select-none ${styles.content}`}
       >
         <div className="head w-full absolute z-10">
           <div className="h-[50px] flex justify-center">
@@ -97,28 +97,34 @@ export default function TravelWebsite() {
         <img
           src={bac3}
           alt=""
-          className="absolute bottom-[-12%] max-w-none pointer-events-none back-3"
+          className={`absolute bottom-[-12%] max-w-none pointer-events-none ${styles["back-3"]}`}
         />
         <div className="title text-white absolute top-[5%] right-1/2 translate-x-1/2 translate-y-1/2">
-          <h3 className="text-2xl font-normal tracking-[15px] text-center">
+          <h3
+            className={`${styles["subtitle"]} text-2xl font-normal tracking-[15px] text-center`}
+          >
             The Land of Serene Beauty
           </h3>
-          <h1 className="text-[15rem] font-extrabold -mt-12 uppercase tracking-[50px]">
+          <h1
+            className={`${styles["title"]} text-[15rem] font-extrabold -mt-12 uppercase tracking-[50px]`}
+          >
             kerala
           </h1>
         </div>
         <img
           src={bac2_2}
           alt=""
-          className="absolute bottom-[-12%] max-w-none  pointer-events-none back-2"
+          className={`absolute bottom-[-12%] max-w-none  pointer-events-none ${styles["back-2"]}`}
         />
         <img
           src={bac1}
           alt=""
-          className="absolute bottom-[-11%] max-w-none  pointer-events-none back-1"
+          className={`absolute bottom-[-11%] max-w-none  pointer-events-none ${styles["back-1"]}`}
         />
         <div className="w-full flex justify-center info-wrap text-white/[0.7] absolute bottom-[20%] z-10">
-          <p className="w-[70%] text-center tracking-[1px]">
+          <p
+            className={`${styles["intro"]} w-[70%] text-center tracking-[1px]`}
+          >
             Kerala is a tropical paradise in southern India, known for its
             breathtaking landscapes, rich culture, and serene backwaters.
             Whether you're seeking adventure, relaxation, or a taste of India's
@@ -129,12 +135,16 @@ export default function TravelWebsite() {
           </p>
         </div>
         <div className="cta w-full flex justify-center text-white/[0.8] absolute bottom-[10%] z-10">
-          <button className="explore text-[18px] font-extrabold tracking-[3px] bg-transparent border-[1px] border-solid border-white/[0.8] rounded-[50px] w-[300px] h-[50px] flex justify-center items-center gap-2 cursor-pointer">
+          <button
+            className={`${styles.explore} text-[18px] font-extrabold tracking-[3px] bg-transparent border-[1px] border-solid border-white/[0.8] rounded-[50px] w-[300px] h-[50px] flex justify-center items-center gap-2 cursor-pointer`}
+          >
             Explore More
             <i className="fa-solid fa-arrow-right"></i>
           </button>
         </div>
-        <div className="slider text-white/[0.4] w-full flex justify-between absolute top-1/2">
+        <div
+          className={`${styles["slider"]} text-white/[0.4] w-full flex justify-between absolute top-1/2`}
+        >
           <i className="fa-solid fa-chevron-left px-[5%] text-4xl text-white/[0.4]"></i>
           <i className="fa-solid fa-chevron-right px-[5%] text-4xl text-white/[0.4]"></i>
         </div>

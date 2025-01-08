@@ -1,4 +1,5 @@
 {
+  "$schema": "http://json-schema.org/draft-07/schema#",
   "files": [],
   "references": [
     { "path": "./tsconfig.app.json" },
@@ -9,7 +10,11 @@
     "experimentalDecorators": true,
     "types": ["node"],
     "baseUrl": ".",
-    "paths": { "@/*": ["src/*"] }
+    "paths": {
+      "@/*": ["src/*"]
+    },
+    "noUnusedLocals": false,
+    "noUnusedParameters": false
   },
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules", "dist"]
 }
