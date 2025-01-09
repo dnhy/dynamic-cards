@@ -1,11 +1,12 @@
 import ContentMain from "@/components/ContentMain/index.tsx";
 import ContentTop from "@/components/ContentTop/index.tsx";
-import "./index.css";
+import styles from "./index.module.css";
+
 const Content = () => {
   return (
-    <div className="main-content">
-      <ContentTop></ContentTop>
-      <ContentMain></ContentMain>
+    <div className={styles["main-content"]}>
+      <ContentTop />
+      <ContentMain />
     </div>
   );
 };

@@ -21,18 +21,6 @@
   padding: 16px;
   border-radius: 10px;
 }
-.grid-c-title {
-  & {
-    h3 {
-      font-size: initial;
-      font-weight: 400;
-      color: var(--clr-silver);
-    }
-    img {
-      width: 24px;
-    }
-  }
-}
 
 .lg-value {
   color: #c7c4c6;
@@ -78,10 +66,6 @@
 }
 
 @media screen and (max-width: 711px) {
-  .content-grid-one {
-    grid-template-columns: repeat(1, 1fr);
-    row-gap: 12px;
-  }
   .grid-c1 {
     grid-column: 1/3;
   }

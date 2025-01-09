@@ -99,6 +99,17 @@ button {
   align-items: center;
   justify-content: space-between;
   margin-bottom: 16px;
+
+  & {
+    h3 {
+      font-size: initial;
+      font-weight: 400;
+      color: var(--clr-silver);
+    }
+    img {
+      width: 24px;
+    }
+  }
 }
 .grid-c-title-text {
   font-weight: 400;
