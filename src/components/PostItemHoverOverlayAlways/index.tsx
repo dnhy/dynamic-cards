@@ -2,13 +2,16 @@
 
 import clsx from "clsx";
 import { AnimatePresence, motion } from "framer-motion";
-import "./overlayAlways.css";
+import { SidebarContext } from "@/context/sidebarContext.tsx";
+import { useContext } from "react";
+import styles from "./index.module.css";
 
 export const PostItemHoverOverlayAlways = ({
   border,
 }: {
   border: React.CSSProperties;
 }) => {
+  const { isSideBarOpen } = useContext<any>(SidebarContext);
   return (
     <>
       <div className="absolute inset-0 z-50" />
@@ -35,7 +38,7 @@ export const PostItemHoverOverlayAlways = ({
               "absolute  rounded-lg h-full",
               "bg-accent/10 dark:bg-neutral-800",
               "inset-y-4 left-[1px] right-[1px] top-[1px]",
-              "fitscreen"
+              { [styles["fitscreen"]]: isSideBarOpen }
             )}
             style={border}
           />

@@ -2,16 +2,29 @@
   background-color: var(--clr-secondary);
   flex: 1;
   padding: 32px;
+  padding-top: 20px;
+  overflow: auto;
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 1400px) {
   .main-content {
     padding: 20px;
+    padding-top: 0px;
   }
 }
 
 @media screen and (max-width: 1200px) {
   .main-content {
-    padding: 12px;
+    padding: 20px;
+    padding-top: 0px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .main-content {
+    padding: 20px;
   }
 }

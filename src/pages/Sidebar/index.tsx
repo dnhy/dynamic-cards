@@ -9,9 +9,7 @@ import { PostItemHoverOverlayAlways } from "../../components/PostItemHoverOverla
 const Sidebar = () => {
   const [activeLinkIdx, setActiveLinkIdx] = useState(1);
   const { isSideBarOpen } = useContext<any>(SidebarContext);
-  // const unSelectBorder: React.CSSProperties = {
-  //   border: "1px solid var(--clr-primar-light)",
-  // };
+
   const selectBorder: React.CSSProperties = {
     backgroundColor: "var(--clr-pumpkin)",
     boxShadow:
