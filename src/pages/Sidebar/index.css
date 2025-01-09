@@ -98,8 +98,8 @@
   /* margin-left: -260px; */
   background-color: #70a1ff;
   width: 72px;
-  padding-left: 12px;
-  padding-right: 12px;
+  padding-left: 11px;
+  padding-right: 11px;
 
   .info-name {
     display: none;
@@ -131,7 +131,8 @@
 @media screen and (max-width: 1400px) {
   .sidebar {
     background-color: #ff7f50;
-    padding: 24px 16px;
+    padding-left: 11px;
+    padding-right: 11px;
   }
 }
 
@@ -139,8 +140,8 @@
   .sidebar {
     background-color: #70a1ff;
     width: 72px;
-    padding-left: 12px;
-    padding-right: 12px;
+    padding-left: 11px;
+    padding-right: 11px;
   }
   .sidebar-change {
     margin-left: -72px;
