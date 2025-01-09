@@ -4,15 +4,14 @@ import { NavigationLink } from "@/data/type.ts";
 import "./index.css";
 import { useContext, useState } from "react";
 import { SidebarContext } from "@/context/sidebarContext.tsx";
-import { PostItemHoverOverlay } from "@/components/PostItemHoverOverlay.tsx";
-import { PostItemHoverOverlayAlways } from "../../components/PostItemHoverOverlayAlways.tsx";
+import { PostItemHoverOverlayAlways } from "../../components/PostItemHoverOverlayAlways/index.tsx";
 
 const Sidebar = () => {
   const [activeLinkIdx, setActiveLinkIdx] = useState(1);
   const { isSideBarOpen } = useContext<any>(SidebarContext);
-  const unSelectBorder: React.CSSProperties = {
-    border: "1px solid var(--clr-primar-light)",
-  };
+  // const unSelectBorder: React.CSSProperties = {
+  //   border: "1px solid var(--clr-primar-light)",
+  // };
   const selectBorder: React.CSSProperties = {
     backgroundColor: "var(--clr-pumpkin)",
     boxShadow:

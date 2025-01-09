@@ -2,6 +2,7 @@
 
 import clsx from "clsx";
 import { AnimatePresence, motion } from "framer-motion";
+import "./overlayAlways.css";
 
 export const PostItemHoverOverlayAlways = ({
   border,
@@ -32,7 +33,9 @@ export const PostItemHoverOverlayAlways = ({
             key="222"
             className={clsx(
               "absolute  rounded-lg h-full",
-              "inset-y-4 left-[1px] right-[1px] top-[1px]"
+              "bg-accent/10 dark:bg-neutral-800",
+              "inset-y-4 left-[1px] right-[1px] top-[1px]",
+              "fitscreen"
             )}
             style={border}
           />
