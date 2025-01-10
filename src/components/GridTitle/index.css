@@ -1,0 +1,3 @@
+.grid-c-title-add img:hover {
+  filter: brightness(0) invert(60%);
+}

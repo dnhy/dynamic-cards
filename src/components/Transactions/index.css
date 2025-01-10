@@ -1,14 +1,12 @@
 .grid-c2 {
-  min-height: 275px;
   border-radius: 12px;
-  padding: 16px;
+  padding: 24px;
   display: flex;
   flex-direction: column;
   color: var(--clr-white);
   background-color: var(--clr-primary);
   border-radius: 12px;
   box-shadow: rgba(0, 0, 0, 0.05) 0px 8px 24px;
-  transition: all 1s ease-in-out;
 }
 .grid-c2-content {
   flex: 1;
@@ -51,6 +49,9 @@
       }
     }
   }
+}
+.grid-c2-item:last-child {
+  margin-bottom: 0;
 }
 
 @media screen and (max-width: 711px) {

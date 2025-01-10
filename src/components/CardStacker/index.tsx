@@ -1,6 +1,10 @@
 import Card from "../Card";
 import { type ICard } from "../type";
-export default function CardStacker({ data }: { data: ICard[] }) {
+interface CardStackerProps {
+  data: ICard[];
+}
+
+export default function CardStacker({ data }: CardStackerProps) {
   return (
     <div className="flex card-stacker py-10 select-none">
       {data.map((eachData: ICard, index: number) => (

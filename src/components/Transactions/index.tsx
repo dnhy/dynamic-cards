@@ -1,17 +1,13 @@
 // import clsx from "clsx";
-import { iconsImgs } from "@/utils/images.ts";
 import { transactions } from "@/data/data.ts";
 import "./index.css";
+import GridTitle from "../GridTitle/index.tsx";
 
 const Transactions = () => {
   return (
     <div className="grid-c2">
-      <div className="grid-c-title">
-        <h3>All Transactions</h3>
-        <button>
-          <img src={iconsImgs.plus} alt="" />
-        </button>
-      </div>
+      <GridTitle title="All Transactions" />
+
       <div className="grid-c2-content">
         <div className="grid-items">
           {transactions.map((eachData) => (

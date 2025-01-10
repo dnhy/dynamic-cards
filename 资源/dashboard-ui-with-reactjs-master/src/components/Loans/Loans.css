@@ -25,11 +25,21 @@
   stroke-width: 20;
   stroke-linecap: round;
 }
-.progress-bar svg circle:last-of-type {
+/* .progress-bar svg circle:last-of-type {
   stroke-dasharray: 625px;
-  stroke-dashoffset: calc(625px - (625px * var(--percent)) / 168);
+  stroke-dashoffset: calc(625px - (625px * 60) / 168);
   stroke: var(--clr-pumpkin);
+} */
+.progress-bar svg circle.background {
+  stroke: var(--clr-jet);
 }
+
+.progress-bar svg circle.foreground {
+  stroke: var(--clr-pumpkin);
+  stroke-dasharray: 625px;
+  stroke-dashoffset: calc(625px - (625px * 50) / 198);
+}
+
 .progress-bar .number {
   position: absolute;
   top: 50%;

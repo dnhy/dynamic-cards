@@ -1,0 +1,49 @@
+.progress-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  svg {
+    width: 130px;
+    height: 130px;
+    position: relative;
+    transform: rotate(-90deg);
+    circle {
+      width: 100%;
+      height: 100%;
+      stroke-linecap: round;
+      fill: none;
+    }
+    circle.frontCircle {
+      animation: circleLoad 1s ease-in-out forwards;
+    }
+
+    circle.frontCircle:hover {
+      stroke-width: calc(var(--basic-strokeWidth) + 3px);
+      transition: all 1s;
+    }
+  }
+}
+
+.progressText {
+  position: absolute;
+  animation: zoomIn 1s ease-in forwards;
+}
+
+@keyframes circleLoad {
+  from {
+    stroke-dashoffset: var(--stroke-dashArray);
+  }
+  to {
+    stroke-dashoffset: var(--stroke-dashoffset);
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

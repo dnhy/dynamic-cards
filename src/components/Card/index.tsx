@@ -1,5 +1,7 @@
 import type { ICard } from "../type";
 
+type CardProp = ICard & { className: string };
+
 export default function Card({
   title,
   subtitle,
@@ -7,7 +9,7 @@ export default function Card({
   backgroundColors,
   image,
   className,
-}: ICard & { className: string }) {
+}: CardProp) {
   function getImageUrl(name: string) {
     return new URL(`../../assets/${name}`, import.meta.url).href;
   }

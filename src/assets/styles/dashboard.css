@@ -102,7 +102,7 @@ button {
 
   & {
     h3 {
-      font-size: initial;
+      font-size: 1.17em;
       font-weight: 400;
       color: var(--clr-silver);
     }
