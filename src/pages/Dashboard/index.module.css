@@ -1,6 +1,11 @@
 .container {
   display: flex;
-  height: 100vh; /* 默认使用vh */
+  /* 默认使用vh。如果不设置100vh默认main-content是内容撑开的高度，
+  导致container也是被main-content撑开的高度，
+  这样main-content内部就不会滚动。
+  container设置100vh后，导致main-content也是100vh，
+  main-content内部就发生滚动 */
+  height: 100vh;
 }
 
 @supports (-webkit-touch-callout: none) {
