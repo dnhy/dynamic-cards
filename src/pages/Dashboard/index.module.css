@@ -1,4 +1,10 @@
 .container {
   display: flex;
-  height: 100vh; /* 使用 min-height 确保容器至少覆盖视口高度 */
+  height: 100vh; /* 默认使用vh */
+}
+
+@supports (-webkit-touch-callout: none) {
+  .container {
+    height: -webkit-fill-available; /* Safari 使用 -webkit-fill-available */
+  }
 }
