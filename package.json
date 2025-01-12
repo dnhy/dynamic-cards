@@ -7,7 +7,8 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "preinstall": "npx only-allow pnpm"
   },
   "dependencies": {
     "clsx": "^2.1.1",
@@ -15,6 +16,7 @@
     "prop-types": "^15.8.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "react-grid-layout": "^1.5.0",
     "react-router": "^7.1.1",
     "react-router-dom": "^7.1.1"
   },

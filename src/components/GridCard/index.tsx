@@ -1,10 +1,11 @@
 // import clsx from "clsx";
+import { FC } from "react";
 import "./index.css";
 import GridTitle from "@/components/GridTitle/index.tsx";
 
-const GridCard = () => {
+const GridCard: FC<any> = (props) => {
   return (
-    <div className="grid-one-item grid-c1 ">
+    <div {...props} className="grid-one-item grid-c1">
       <GridTitle title="Cards" />
 
       <div className="grid-c1-content">

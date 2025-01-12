@@ -2,10 +2,11 @@
 import { transactions } from "@/data/data.ts";
 import "./index.css";
 import GridTitle from "../GridTitle/index.tsx";
+import { FC } from "react";
 
-const Transactions = () => {
+const Transactions: FC<any> = (props) => {
   return (
-    <div className="grid-c2">
+    <div {...props} className="grid-c2">
       <GridTitle title="All Transactions" />
 
       <div className="grid-c2-content">
