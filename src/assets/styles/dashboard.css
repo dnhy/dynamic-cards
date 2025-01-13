@@ -128,3 +128,35 @@ button {
     font-size: 14px !important;
   }
 }
+
+.grid-c-wrap {
+  height: 100%;
+  border-radius: 12px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  color: var(--clr-white);
+  background-color: var(--clr-primary);
+  border-radius: 12px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 8px 24px;
+  overflow: auto;
+  &::-webkit-scrollbar {
+    opacity: 0;
+    width: 4px;
+  }
+}
+.grid-c-wrap:hover {
+  &::-webkit-scrollbar {
+    opacity: 1;
+    width: 4px;
+    margin-left: 10px;
+  }
+  &::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 18px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: var(--clr-pumpkin);
+    border-radius: 18px;
+  }
+}

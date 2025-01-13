@@ -4,7 +4,7 @@ import { savings } from "@/data/data.ts";
 
 const Savings = () => {
   return (
-    <div className="grid-c6">
+    <div className="grid-c6 grid-c-wrap">
       <GridTitle title="Savings" />
       <div className="grid-c6-content">
         <div className="fees">

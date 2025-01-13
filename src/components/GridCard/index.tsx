@@ -5,7 +5,7 @@ import GridTitle from "@/components/GridTitle/index.tsx";
 
 const GridCard: FC<any> = (props) => {
   return (
-    <div {...props} className="grid-one-item grid-c1">
+    <div {...props} className="grid-one-item grid-c1 grid-c-wrap">
       <GridTitle title="Cards" />
 
       <div className="grid-c1-content">

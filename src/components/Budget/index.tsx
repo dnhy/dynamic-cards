@@ -5,7 +5,7 @@ import "./index.css";
 
 const Budget = () => {
   return (
-    <div className="grid-c4">
+    <div className="grid-c4 grid-c-wrap">
       <GridTitle title="Budget" />
       <div className="grid-c-top text-sliver-v1">
         <h2 className="lg-value">Cash</h2>

@@ -6,7 +6,7 @@ import { useState } from "react";
 const Loans = () => {
   const [progress] = useState(50);
   return (
-    <div className="grid-c7">
+    <div className="grid-c7 grid-c-wrap">
       <GridTitle title="Loans" />
       <div className="grid-c7-content">
         <div className="grid-l">

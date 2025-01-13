@@ -6,7 +6,7 @@ import { FC } from "react";
 
 const Transactions: FC<any> = (props) => {
   return (
-    <div {...props} className="grid-c2">
+    <div {...props} className="grid-c2 grid-c-wrap">
       <GridTitle title="All Transactions" />
 
       <div className="grid-c2-content">

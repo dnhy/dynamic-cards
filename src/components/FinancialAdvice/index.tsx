@@ -3,7 +3,7 @@ import "./idnex.css";
 
 const FinancialAdvice = () => {
   return (
-    <div className="grid-c8">
+    <div className="grid-c8 grid-c-wrap">
       <GridTitle title="Financial Advice" />
       <p className="text-silver-v1 ">
         Ipsum dolor sit amet consectetur, adipisicing elit. Iste, vitae.....

@@ -5,7 +5,7 @@ import { iconsImgs } from "@/utils/images.ts";
 
 const Subscriptions = () => {
   return (
-    <div className="grid-c5">
+    <div className="grid-c5 grid-c-wrap">
       <GridTitle title="Subscriptions" />
       <div className="grid-c5-content">
         <div className="grid-items">

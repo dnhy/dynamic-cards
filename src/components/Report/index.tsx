@@ -4,7 +4,7 @@ import "./index.css";
 
 const Report = () => {
   return (
-    <div className="grid-c3">
+    <div className="grid-c3 grid-c-wrap">
       <GridTitle title="Report" />
       <div className="grid-c3-content">
         <div className="grid-chart">
