@@ -9,7 +9,6 @@ import Savings from "@/components/Savings/index.tsx";
 import Loans from "@/components/Loans/index.tsx";
 import FinancialAdvice from "@/components/FinancialAdvice/index.tsx";
 import GridLayout from "react-grid-layout";
-console.log(123);
 
 const ContentMain = () => {
   return (
